@@ -1,7 +1,7 @@
 app:
   name: web-app
   image:
-    repository: my-gitops-web-app
+    repository: diwakarsaini7/my-gitops-web-app
     tag: "latest"
     pullPolicy: Always
   port: 5000
