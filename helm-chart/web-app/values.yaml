@@ -4,8 +4,9 @@ app:
     repository: tiangolo/uwsgi-nginx-flask
     tag: "python3.9"
     pullPolicy: Always
-  port: 80  # Note: change port for this image
+  port: 80
   replicas: 2
+
 mysql:
   image: mysql:8.0
   rootPassword: "password"
@@ -16,4 +17,4 @@ mysql:
 service:
   type: LoadBalancer
   port: 80
-  targetPort: 5000
+  targetPort: 80
