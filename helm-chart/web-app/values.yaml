@@ -1,12 +1,11 @@
 app:
   name: web-app
   image:
-    repository: diwakarsaini7/my-gitops-web-app
-    tag: "latest"
+    repository: tiangolo/uwsgi-nginx-flask
+    tag: "python3.9"
     pullPolicy: Always
-  port: 5000
+  port: 80  # Note: change port for this image
   replicas: 2
-
 mysql:
   image: mysql:8.0
   rootPassword: "password"
